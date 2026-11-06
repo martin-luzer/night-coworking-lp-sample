@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>YORU WORKS コワーキングカフェ（サンプル）</title>
+<meta name="description" content="24時まで営業する、仕事帰りのためのコワーキングカフェのLPサンプル。店名・料金・住所はすべて架空です。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+<script>document.documentElement.classList.add('js');if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('is-reduced');</script>
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="#top" aria-label="YORU WORKS トップへ">YORU WORKS<small>24時までのコワーキングカフェ</small></a>
+  <nav class="nav" aria-label="ページ内"><a href="#scene">使い方</a><a href="#space">設備</a><a href="#price">料金</a><a href="#access">アクセス</a></nav>
+  <a class="btn btn--sm" href="#price">料金を見る</a>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero_photo" data-open-photo><img src="photos/hero.jpg" alt="夜のコワーキングカフェで作業する人たち" width="1800" height="1200" fetchpriority="high"></div>
+    <div class="hero_body">
+      <p class="hero_tag" data-open="1">渋谷駅 徒歩4分｜毎日 10:00〜24:00</p>
+      <h1 class="hero_copy" data-open="2"><span>仕事帰りの、</span><span>もうひと頑張りに。</span></h1>
+      <p class="hero_lead" data-open="3">カフェが閉まっても、家ではくつろいでしまっても。<br>24時まで、集中できる席があります。</p>
+      <!-- 閉店までの残り時間（今の時刻から計算） -->
+      <div class="clock" data-open="4" aria-live="polite">
+        <p class="clock_now">いまは <b data-now>19:42</b></p>
+        <p class="clock_left">24時まで、あと <b data-left>4時間18分</b> 集中できます。</p>
+        <span class="clock_bar" aria-hidden="true"><span data-bar></span></span>
+      </div>
+      <div class="hero_btns" data-open="5">
+        <a class="btn" href="#price">ドロップインの料金を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使い方 -->
+  <section class="scene" id="scene">
+    <header class="secHead" data-up>
+      <p class="secHead_en">SCENE</p>
+      <h2 class="secHead_ja">こんな夜に、どうぞ。</h2>
+    </header>
+    <ul class="scene_list" data-each>
+      <li data-up><p class="scene_time">19:30</p><h3>資格の勉強を、毎日1時間</h3><p>決まった席に座るだけで、勉強の時間がつくれます。</p></li>
+      <li data-up><p class="scene_time">20:00</p><h3>副業の作業を、まとめて</h3><p>電源とWi-Fiは全席に。ワークブースならオンライン会議も。</p></li>
+      <li data-up><p class="scene_time">22:00</p><h3>明日の準備を、静かに</h3><p>夜は照明を少し落として、落ち着いた空気に切り替えます。</p></li>
+    </ul>
+  </section>
+
+  <!-- 設備 -->
+  <section class="space" id="space">
+    <div class="space_grid">
+      <div class="space_photo space_photo--a" data-reveal><img src="photos/booth.jpg" alt="デスクライトのある1人用ワークブース" width="1440" height="1800" loading="lazy"></div>
+      <div class="space_photo space_photo--b" data-reveal><img src="photos/worker.jpg" alt="仕事帰りにパソコンで作業する女性" width="1440" height="1800" loading="lazy"></div>
+      <div class="space_body">
+        <header class="secHead secHead--left" data-up>
+          <p class="secHead_en">SPACE</p>
+          <h2 class="secHead_ja">集中のための、<br>ちょうどいい設備</h2>
+        </header>
+        <ul class="space_list" data-each>
+          <li data-up><b>全席 電源・高速Wi-Fi</b>1Gbpsの光回線。重い資料もすぐに。</li>
+          <li data-up><b>ワークブース 8席</b>通話OK。オンライン会議や面談に。</li>
+          <li data-up><b>ドリンク飲み放題</b>コーヒー・お茶・夜はノンカフェインも。</li>
+          <li data-up><b>会話禁止の静かな席</b>フロアの半分は、話さない席です。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金 -->
+  <section class="price" id="price">
+    <header class="secHead" data-up>
+      <p class="secHead_en">PRICE</p>
+      <h2 class="secHead_ja">使った分だけ。<br class="sp">夜はもっとお得に。</h2>
+    </header>
+    <div class="price_list" data-each>
+      <div class="pCard" data-up><h3>ドロップイン</h3><p class="pCard_price">250<small>円／30分</small></p><p class="pCard_desc">予約なしで、ふらっと。1日の上限 1,800円</p></div>
+      <div class="pCard pCard--main" data-up><p class="pCard_tag">いちばん人気</p><h3>ナイトパック</h3><p class="pCard_price">1,200<small>円</small></p><p class="pCard_desc">19:00〜24:00 使い放題・ドリンクつき</p></div>
+      <div class="pCard" data-up><h3>ナイト会員</h3><p class="pCard_price">8,800<small>円／月</small></p><p class="pCard_desc">平日 18:00〜24:00 何度でも</p></div>
+    </div>
+    <p class="note" data-up>※料金はサンプルです（税込表示の例）。ワークブースは30分＋100円。</p>
+  </section>
+
+  <!-- ドリンク -->
+  <section class="drink">
+    <div class="drink_photo"><img data-parallax src="photos/counter.jpg" alt="カウンターでコーヒーを注ぐ手元" width="1800" height="1200" loading="lazy"></div>
+    <div class="drink_body" data-each>
+      <p class="secHead_en" data-up>CAFE</p>
+      <h2 class="drink_title" data-up>一杯のコーヒーで、<br>スイッチを入れる。</h2>
+      <p class="drink_text" data-up>21時以降は、眠りをじゃましないノンカフェインのお茶も用意しています。</p>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section class="access" id="access">
+    <div class="access_inner">
+      <header class="secHead secHead--left" data-up>
+        <p class="secHead_en">ACCESS</p>
+        <h2 class="secHead_ja">駅から4分。<br>帰り道の途中に。</h2>
+      </header>
+      <dl class="access_table" data-each>
+        <div data-up><dt>営業時間</dt><dd>毎日 10:00〜24:00（最終入店 23:00）</dd></div>
+        <div data-up><dt>住所</dt><dd>東京都渋谷区〇〇 1-2-3 YORUビル 2F（架空）</dd></div>
+        <div data-up><dt>アクセス</dt><dd>渋谷駅 東口から歩いて4分</dd></div>
+        <div data-up><dt>席数</dt><dd>オープン席 32席／ワークブース 8席</dd></div>
+        <div data-up><dt>お支払い</dt><dd>クレジットカード、交通系IC、QRコード決済</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="faq">
+    <header class="secHead" data-up><p class="secHead_en">Q&amp;A</p><h2 class="secHead_ja">よくある質問</h2></header>
+    <div class="faq_list" data-each>
+      <details data-up><summary>予約しないと使えませんか？</summary><div><p>ドロップインとナイトパックは予約なしで使えます。ワークブースだけ、アプリから予約もできます。</p></div></details>
+      <details data-up><summary>食べ物を持ち込んでもいいですか？</summary><div><p>においの少ない軽食なら大丈夫です。カウンターでも焼き菓子を販売しています。</p></div></details>
+      <details data-up><summary>一人でも気まずくないですか？</summary><div><p>ほとんどの方がお一人です。話さない席もあるので、黙々と作業できます。</p></div></details>
+    </div>
+  </section>
+
+  <section class="cta" data-bar-end>
+    <div class="cta_inner" data-each>
+      <h2 class="cta_title" data-up>今夜、帰る前に<br>寄っていきませんか。</h2>
+      <div data-up><a class="btn btn--light" href="#price">料金と空席を見る</a></div>
+      <p class="cta_note" data-up>※サンプルのため、ボタンは動きません。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer_logo">YORU WORKS</p>
+  <p class="footer_note">このページは制作サンプルです。店名・料金・住所・設備はすべて架空で、写真はAIで生成しています。</p>
+  <p class="footer_copy">Sample design by シノブフジモト</p>
+</footer>
+
+<nav class="spBar" aria-label="料金"><a href="#price">料金を見る</a><a href="#access">アクセス</a></nav>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="main.js?v=1"></script>
+<script>
+// 閉店（24:00）までの残り時間を、今の時刻から出す。営業時間外は開店までの案内に切り替える
+(() => {
+  const now = document.querySelector('[data-now]'), left = document.querySelector('[data-left]'), bar = document.querySelector('[data-bar]');
+  const line = left.parentElement;
+  const tick = () => {
+    const d = new Date(); const h = d.getHours(), m = d.getMinutes();
+    now.textContent = `${h}:${String(m).padStart(2, '0')}`;
+    if (h >= 10) {
+      const rest = 24 * 60 - (h * 60 + m);
+      line.innerHTML = `24時まで、あと <b data-left>${Math.floor(rest / 60)}時間${rest % 60}分</b> 集中できます。`;
+      bar.style.transform = `scaleX(${rest / (14 * 60)})`;
+    } else {
+      const until = 10 * 60 - (h * 60 + m);
+      line.innerHTML = `開店の10時まで、あと <b data-left>${Math.floor(until / 60)}時間${until % 60}分</b>。今夜も24時まで開いています。`;
+      bar.style.transform = 'scaleX(0)';
+    }
+  };
+  tick(); setInterval(tick, 30 * 1000);
+})();
+</script>
+</body>
+</html>
